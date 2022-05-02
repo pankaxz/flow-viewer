@@ -1,0 +1,34 @@
+HUD - Main option like profile and project names
+
+Project
+- As soon as we instantiate a new   project, a new clean editor should show up
+
+SequenceList
+- Responsible for creating the JSON for the visuallization
+- Should be able to read other sequencess too 
+- Should categories Sequence if necessay in groups and give important details
+
+Sequence
+- Sequence can be of multiple types based on context
+  - Step
+    - Big and clear heading
+    - step will connect with immediate task as well as the next immediate step 
+    - Step if clicked should toggle collapse
+
+  - Task
+    - No heading
+    - Just a curved square with text
+    - Should have ability to instancite a new sub Task
+    - Task can be wrong or right , wrong task will have a red Line, right task will have a green Line
+    - Last task should connect to next step
+
+- Each Sequence will store text if its of type Task or SubTask there is any  
+- Each Sequence will have a state in which it is currently  
+ - Todo(default) - white
+ - In Progress - Blue
+ - Buggy - Orange
+ - Done - Green
+
+ - There has to be a new state for Change requests (TVR specific)
+-Each Sequence will have a user detail of whoever edited it last and when  
+
